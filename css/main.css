@@ -105,7 +105,7 @@ Media Queries
 @media (min-width: 768px) {
   .section {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
   }
   .section__hero {
     width: 50%;

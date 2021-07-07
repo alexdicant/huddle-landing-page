@@ -16,6 +16,7 @@ body {
   background-image: url('../images/bg-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  box-sizing: border-box;
 }
 
 main {
@@ -64,6 +65,9 @@ h1 {
   padding: 9px;
   border: 1px solid white;
   border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__social-icon i:first-child {
@@ -103,6 +107,15 @@ Media Queries
 */
 
 @media (min-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  main {
+    height: 100vh;
+    max-width: 1140px;
+    width: 85vw;
+    margin: 0 auto;
+  }
   .section {
     display: flex;
     flex-wrap: wrap;
@@ -111,9 +124,18 @@ Media Queries
     width: 50%;
   }
   .section__info {
-    width: 50%;
+    text-align: left;
+    width: 30%;
+    padding: 50px;
+  }
+  .section__info h1 {
+    text-align: left;
+    font-size: 2rem;
   }
   .section__social-icon {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
